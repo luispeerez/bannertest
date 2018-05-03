@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Banner test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+
+  <style>
+    .container-banner {
+      flex: 1;
+      flex-direction: row;
+      display: flex;
+      width: 100%;
+      position: relative;
+      background-color: #F5FF00;
+    }
+
+    .container-banner:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0);
+    }
+
+    .action-btn {
+      position: relative;
+      background: linear-gradient(to bottom, #92D2A9, #02763C);
+      border-radius: 10px;
+      padding: 10px 20px;
+      display: block;
+      margin: 10px 0;
+      -moz-box-shadow: 10px 10px 14px 1px rgba(0, 0, 0, .75);
+      box-shadow: 10px 10px 14px 1px rgba(0, 0, 0, .75);
+      -webkit-transition: ease 0.2s;
+      /* Safari */
+      transition: ease 0.2s;
+    }
+
+    .action-btn:hover {
+      background: linear-gradient(to bottom, rgb(110, 158, 127), rgb(2, 99, 50));
+    }
+
+    .photo-container {
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-image: url(banner-min.jpg);
+      display: flex;
+      height: 503px;
+    }
+
+    .banner-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 100%;
+    }
+
+    .banner-content .dialog {
+      z-index: 4;
+      position: absolute;
+      padding: 20px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff;
+      font-size: 21px;
+      right: 20px;
+      font-family: Arial;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .banner-content .absolute-link {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: block;
+      left: 0;
+      top: 0;
+      z-index: 2;
+    }
+
+    .banner-content p {
+      margin: 0
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container-banner">
+    <div class="photo-container">
+
+    </div>
+    <div class="banner-content">
+      <div class="dialog">
+        <div class="action-btn">
+          <a href="#" class="absolute-link"></a>
+          <p>Registrate aqui y llevate un</p>
+          <p>
+            <strong>FOTOLIBRO GRATIS</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
